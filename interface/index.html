@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ChatApp for Final Term Test</title>
+    <link href="./index.css" rel="stylesheet" />
+    <!-- INTERNET PLZ :P -->
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+</head>
+
+<body>
+    <!-- HEADER STUFF -->
+    <div id=header>
+        <input id="username-box" type="text" placeholder="What's your name ?" required />
+    </div>
+    <!-- END OF HEADER STUFF -->
+    <!-- CHAT WINDOW STUFF -->
+    <div id="chat-window">
+        <div id="message-window">
+            <div id="message"></div>
+            <span id="is_writting"></span>
+        </div>
+    </div>
+    <button id="insert-picture"><img src="./img/1.png"></button>
+    <input id="choose-file" type="file" accept="image/jpeg,image/pjpeg,image/png,image/bmp,image/x-windows-bmp" />
+    <input id="message-box" type="text" placeholder="Message" required/>
+    <button id="send-button"> SEND ! </button>
+    <!-- ALL OF THE ABOVE IS GOING TO BE OVERLAYED ! -->
+    <div id="overlay"></div>
+    <!-- ERROR WINDOW STUFF -->
+    <div id="alert-error">
+        <img src="./img/orange-error-32.png">
+        <br>
+        <span id="error_msg"></span>
+        <button id="ok_button">OK</button>
+    </div>
+    <!-- END OF ERROR WINDOW STUFF -->
+    <!-- TOKEN SCREEN -->
+    <div id="token-window">
+        <span id="token-text">Share this token to your friends</span>
+        <br>
+        <input id="token" type="text" value="TOKEN TESTING" readonly/>
+    </div>
+    <!-- END OF TOKEN SCREEN -->
+    <!-- END OF ERROR WINDOW STUFF -->
+    <script src="./chat-socket.js"></script>
+    <!-- CHAT WINDOW STUFF -->
+</body>
+
+</html>

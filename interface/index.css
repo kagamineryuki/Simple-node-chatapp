@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    background-color: #4C5B5C;
+}
+
+#header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    position: sticky;
+}
+
+#username-box {
+    background: none;
+    border: none;
+    text-align: center;
+    font-family: 'Passion One', cursive;
+    font-size: 60pt;
+    color: #FDE74C;
+}
+
+/*token window stuff*/
+
+#token-window {
+    background-color: #4C5B5C;
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 30vh;
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+#token-text {
+    position: relative;
+    display: block;
+    color: #FDE74C;
+    font-family: 'Passion One', cursive;
+    font-size: 80pt;
+    margin-bottom: 70px;
+}
+
+#token {
+    position: relative;
+    color: black;
+    text-align: center;
+    font-size: 70pt;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+/*chat windows stuff*/
+
+#choose-file {
+    visibility: hidden;
+    display: none;
+}
+
+#insert-picture {
+    float: left;
+    height: 10vh;
+    width: 20vw;
+    background-color: #4C5B5C;
+    border: none;
+}
+
+#insert-picture img {
+    position: relative;
+    height: 50%;
+    width: 50%;
+}
+
+#message-box {
+    float: left;
+    display: inline-block;
+    width: 80vw;
+    height: 10vh;
+    border: none;
+    text-align: center;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 40pt;
+    line-height: 150%;
+    background: none;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+#message {
+    word-wrap: break-word;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    border-top: 1px;
+    border-bottom: 2px;
+    border-color: grey;
+}
+
+#message img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#message span {
+    margin-top: 50px;
+}
+
+#chat-window {
+    height: 70vh;
+    width: 100vw;
+    background-color: #FDE74C;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#chat-window span {
+    display: block;
+    font-size: 35pt;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+#send-button {
+    border: none;
+    width: 100vw;
+    height: 10vh;
+    font-size: 50pt;
+    color: #4C5B5C;
+    font-family: 'Passion One', cursive;
+    background-color: #FDE74C;
+}
+
+#ok_button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    width: 20vw;
+    height: 80px;
+    font-size: 50pt;
+    color: #4C5B5C;
+    font-family: 'Passion One', cursive;
+    background-color: #FDE74C;
+    margin-top: 20px;
+}
+
+/*alert stuff*/
+
+#alert-error {
+    background-color: #4C5B5C;
+    text-align: center;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 50pt;
+    font-weight: 500;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 30vh;
+    width: 100vw;
+    visibility: hidden;
+    padding-top: 40px;
+    color: #FDE74C;
+}
+
+#alert-error img {
+    height: 40%;
+    margin: 10px;
+}
+
+#overlay {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #4C5B5C;
+    opacity: 0.4;
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*placeholder*/
+
+input::-webkit-input-placeholder {
+    color: #FDE74C !important;
+}
