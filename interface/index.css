@@ -21,43 +21,6 @@ body {
     color: #FDE74C;
 }
 
-/*token window stuff*/
-
-#token-window {
-    background-color: #4C5B5C;
-    width: 100vw;
-    height: 40vh;
-    position: absolute;
-    margin: auto;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    height: 30vh;
-    width: 100vw;
-    text-align: center;
-    padding: 30px;
-    box-sizing: border-box;
-    visibility: hidden;
-}
-
-#token-text {
-    position: relative;
-    display: block;
-    color: #FDE74C;
-    font-family: 'Passion One', cursive;
-    font-size: 80pt;
-    margin-bottom: 70px;
-}
-
-#token {
-    position: relative;
-    color: black;
-    text-align: center;
-    font-size: 70pt;
-    font-family: 'Ropa Sans', sans-serif;
-}
-
 /*chat windows stuff*/
 
 #choose-file {
@@ -82,7 +45,7 @@ body {
 #message-box {
     float: left;
     display: inline-block;
-    width: 80vw;
+    width: 60vw;
     height: 10vh;
     border: none;
     text-align: center;
@@ -96,48 +59,53 @@ body {
     box-sizing: border-box;
 }
 
-#message {
-    word-wrap: break-word;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 70px;
-    box-sizing: border-box;
-    border-top: 1px;
-    border-bottom: 2px;
-    border-color: grey;
-}
-
-#message img {
-    width: 100%;
-    margin-top: 20px;
-}
-
-#message span {
-    margin-top: 50px;
-}
-
 #chat-window {
-    height: 70vh;
+    height: 80vh;
     width: 100vw;
+    box-sizing: border-box;
     background-color: #FDE74C;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding: 30px;
 }
 
-#chat-window span {
+#chat-window span{
+    font-size: 35pt;
     display: block;
+}
+
+#message span{
+    display: block;
+    width: 100%;
     font-size: 35pt;
     font-family: 'Ropa Sans', sans-serif;
 }
 
+#message span:not(:first-child){
+    margin-top: 30px;
+}
+
+#is_writting{
+    font-size: 35pt;
+    font-family: 'Ropa Sans', sans-serif;
+    margin-top: 30px;
+}
+
+#chat-window img {
+    vertical-align: text-top;
+    width: 70%;
+    margin-left: 20px;
+}
+
 #send-button {
     border: none;
-    width: 100vw;
+    width: 20vw;
     height: 10vh;
     font-size: 50pt;
-    color: #4C5B5C;
+    color: #FDE74C;
     font-family: 'Passion One', cursive;
-    background-color: #FDE74C;
+    background-color: #4C5B5C;
+    float: left;
 }
 
 #ok_button {
@@ -154,6 +122,7 @@ body {
     margin-top: 20px;
 }
 
+
 /*alert stuff*/
 
 #alert-error {
@@ -168,7 +137,7 @@ body {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    height: 30vh;
+    height: 40vh;
     width: 100vw;
     visibility: hidden;
     padding-top: 40px;
@@ -193,6 +162,7 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
 
 /*placeholder*/
 
