@@ -39,7 +39,6 @@ body {
 #insert-picture img {
     position: relative;
     height: 50%;
-    width: 50%;
 }
 
 #message-box {
@@ -64,9 +63,8 @@ body {
     width: 100vw;
     box-sizing: border-box;
     background-color: #FDE74C;
-    overflow-y: scroll;
-    overflow-x: hidden;
     padding: 30px;
+    overflow-y: scroll;
 }
 
 #chat-window span{
@@ -74,27 +72,37 @@ body {
     display: block;
 }
 
+#message{
+    display: block;
+    width:100%;
+    overflow: hidden;
+}
+
 #message span{
     display: block;
     width: 100%;
     font-size: 35pt;
     font-family: 'Ropa Sans', sans-serif;
+    word-wrap: break-word;
 }
 
 #message span:not(:first-child){
     margin-top: 30px;
 }
 
+#message img {
+    vertical-align: text-top;
+    width: 90%;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 10px;
+    border-color: #4C5B5C;
+}
+
 #is_writting{
     font-size: 35pt;
     font-family: 'Ropa Sans', sans-serif;
     margin-top: 30px;
-}
-
-#chat-window img {
-    vertical-align: text-top;
-    width: 70%;
-    margin-left: 20px;
 }
 
 #send-button {

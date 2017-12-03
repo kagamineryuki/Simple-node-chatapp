@@ -1,5 +1,5 @@
 //don't forget to change this as well if you change the port on the back-end
-var socket_io_lib = io.connect('http://192.168.0.102:1212');
+var socket_io_lib = io();
 
 //variables for selecting element
 var message_box = document.getElementById('message-box');
@@ -55,7 +55,7 @@ send_button.addEventListener('click', function() {
     message_box_clear();
 });
 
-//message button
+//message
 //input image button
 insert_picture.addEventListener('click', function() {
     if (username_box.value.length == 0) {
@@ -76,6 +76,12 @@ choose_file.addEventListener('change', function() {
     }
 reader.readAsDataURL(file);
 })
+
+//username_box change value
+username_box.addEventListener('change',function(){
+    message_box.readOnly = false;
+    username_box.readOnly = true;
+});
 
 //on enter key pressed
 message_box.addEventListener('keypress', function(key_pressed) {
@@ -117,12 +123,12 @@ ok_button.addEventListener('click', function() {
 //soccket.io stuff
 //receive data
 socket_io_lib.on('message_data', function(data) {
-    message.innerHTML += '<span><strong>' + data.username + ': </strong>' + data.message + '</span>';
+    message.innerHTML += '<span><strong>' + data.username + ': </strong><br>' + data.message + '</span>';
     chat_window.scrollTop = chat_window.scrollHeight;
 });
 
 socket_io_lib.on('image_data', function(data) {
-    message.innerHTML += '<span><strong>'+ data.username +':'+'<img src="' + data.picture + '"></strong></span>';
+    message.innerHTML += '<span><strong>'+ data.username +':'+'<br><img src="' + data.picture + '"></strong></span>';
     chat_window.scrollTop = chat_window.scrollHeight;
 });
 

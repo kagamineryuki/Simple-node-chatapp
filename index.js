@@ -3,7 +3,7 @@ var socket_io = require('socket.io');
 var app = exp_app();
 
 //server init
-var port = 1212;
+var port = process.env.PORT||80||443;
 var listen_port = app.listen(port, function() {
     console.log('Server Started !!!!!');
     console.log('PORT OPENED ON : ' + port);
